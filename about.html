@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> about</title>
+
+  <link rel="icon" type="image/png"
+    href="https://www.express.com/content/dam/express/2020/projects/digital/web/inline-content/03-march/0318-digital-2943-m-luxe-comfort-knit/-dt/m-luxe-comfort-p7-dt.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<style>
+  
+
+  .view_port {
+    background-color: snow;
+    height: 65px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: auto;
+  }
+
+  .top1 {
+
+    float: left;
+  }
+
+  .topimg {
+    width: 51px;
+
+    background-color: #595959;
+
+  }
+
+  .polling_message {
+    color: azure;
+    float: right;
+    margin-right: 25%;
+    font-size: 60px;
+    text-shadow: 3px 2px;
+  }
+
+
+
+  .cylon_eye {
+    background-color: red;
+    background-image: linear-gradient(to right,
+      rgba(0, 0, 0, .9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%);
+    color: white;
+    height: 100%;
+    width: 80%;
+
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+    animation: 4s linear 0s infinite alternate move_eye;
+
+  }
+  
+  @-webkit-keyframes move_eye {
+    from {
+      margin-left: -20%;
+    }
+
+    to {
+      margin-left: 100%;
+    }
+  }
+
+  @keyframes move_eye {
+    from {
+      margin-left: -20%;
+    }
+
+    to {
+      margin-left: 100%;
+    }
+  }
+
+
+  .photo2 {
+    float: right;
+  }
+
+  .w3-content {
+
+    float: right;
+    width: 58%;
+    margin-left: 20%;
+    border: solid 5px;
+    margin-bottom: 20px;
+    margin-top: 3%;
+  }
+
+  .mySlides {
+    height: 400px;
+    width: 110%;
+    margin-top: 18px;
+  }
+ 
+
+  .navbar {
+            background-color: #555;
+            overflow: auto;
+                }
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            width: 15%;
+            
+                    }
+        .navbar a:hover {
+            background-color: #000000;
+                        }
+
+        .active {
+            background-color:#000000 ;
+                }
+
+   
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  
+
+  .navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+
+  .navbar a {
+    float: left;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 15%;
+  }
+
+  .navbar a:hover {
+    background-color: #000;
+  }
+
+  .active {
+    background-color: #555;
+  }}
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+
+  * {
+    box-sizing: border-box
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+  }
+
+  .container {
+    position: relative;
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+  .container img {
+    vertical-align: middle;
+  }
+
+  .container .aml {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .head {
+    color: #463E41;
+    font-size: 30px;
+  }
+
+  .mmm {
+    color: #B71C1C;
+    font-size: 30px;
+  }
+
+  .sss {
+    color: white;
+    font-size: 30;
+  }
+
+
+
+
+  
+ 
+
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+
+  .row {
+    margin: 10px -16px;
+  }
+
+  /* Add padding BETWEEN each column */
+  .row,
+  .row>.column {
+    padding: 8px;
+  }
+
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none;
+    /* Hide all elements by default */
+  }
+
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #ddd;
+  }
+
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+
+
+
+ 
+
+
+
+
+
+
+  .footer-main {
+    width:1502px;
+    height: auto;
+    margin-left: -30px;
+    margin-bottom: -100px;
+    background: lightgray;
+    padding: 20px 0px;
+
+  }
+
+  .footer-section-one {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .footer-section-one ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .footer-section-one ul li {
+    display: inline-block;
+    margin: 0px 20px;
+  }
+
+  .footer-section-one ul li a {
+    font-family: sans-serif;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  .footer-social-icons {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .footer-social-icons ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .footer-social-icons ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #32cd32;
+  }
+
+  .footer-social-icons ul li a {
+    color: black;
+    font-size: 25px;
+    display: block;
+  }
+
+  .footer-social-icons ul li a i {
+    line-height: 50px;
+  }
+
+  .follow {
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+  }
+
+  .copy-right {
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+  }
+</style>
+
+
+
+<body>
+
+
+  <div class="view_port">
+
+
+    <img class="photo2" src="https://l.top4top.io/p_1540slw6g1.png" title="logo" alt="Logo" width="80" height="60" />
+
+    <div class="polling_message">
+      SMA FOR CLOTHES
+    </div>
+
+
+    <div class="cylon_eye"></div>
+
+  </div>
+  <div class="navbar">
+    <a  href="home.html">
+      <center>Home</center>
+    </a>
+    <a href="services.html">
+      <center> Services</center>
+    </a>
+    <a  class="active"href="about.html">
+      <center> About</center>
+    </a>
+    <a href="contact us.html">
+      <center>Contact us</center>
+    </a>
+    <a href="login.html">
+      <center>Login</center>
+    </a>
+
+  </div>
+  <br>
+   
+  
+  <h1>
+    <center> SMA for clothes</center>
+  </h1>
+
+
+  <h2 class="head"> A Brief About Our Store "SMA" </h2>
+
+  <div class="container">
+    <img
+      src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+      style="width:100%; height: 600px;">
+    <div class="aml">
+      <h5 class="mmm">In SMA</h5>
+      <p class="sss">You must see our products, Anything you want, you will find here, we care about the small details
+        that you will not find elsewhere, You will find new products from blouses,T-shirts,Shirts,Trousers and dresses
+        for children and youth Our shop is available from nine in the morning until nine in the evening. You can also
+        ask things from us online. we will arrive at your home if you want, because we care about the comfort of
+        customers. Whatever you want, no matter if you are in any country, we will reach what you need to your home.
+        Also, most of our products are cheap, and every month we make a discount for the preferred products for each one
+      </p>
+    </div>
+  </div>
+
+
+  <!-- MAIN (Center website) -->
+  <div class="main">
+
+    <h1><a class="aaa" href="#" target="_blank"> SMA store </a></h1>
+    <hr>
+
+    <h2>PORTFOLIO</h2>
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('women')"> Women</button>
+      <button class="btn" onclick="filterSelection('men1')"> Men </button>
+      <button class="btn" onclick="filterSelection('children')"> Children</button>
+    </div>
+
+
+
+
+    <div class="row">
+      <div class="column women">
+        <div class="content">
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            style="width:100%">
+          <h4>women section</h4>
+
+        </div>
+      </div>
+      <div class="column women">
+        <div class="content">
+          <img
+            src="https://images.unsplash.com/photo-1525562723836-dca67a71d5f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt="Lights" style="width:100%">
+          <h4>women section</h4>
+        </div>
+      </div>
+
+      <div class="column women">
+        <div class="content">
+          <img
+            src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt="Nature" style="width:100%">
+          <h4>women section</h4>
+        </div>
+      </div>
+
+      <div class="column men1">
+        <div class="content">
+          <img
+            src="https://images.unsplash.com/photo-1551488831-68b4d0c92c13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt="Car" style="width:100%">
+          <h4>men's section</h4>
+        </div>
+      </div>
+
+      <div class="column men1">
+        <div class="content">
+          <img
+            src="https://images.unsplash.com/photo-1512445239398-6d0c4c575b89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt="Car" style="width:100%">
+          <h4>men's section</h4>
+        </div>
+      </div>
+
+      <div class="column men1">
+        <div class="content">
+          <img
+            src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt="Car" style="width:100%">
+          <h4>men's section</h4>
+        </div>
+      </div>
+
+      <div class="column children">
+        <div class="content">
+          <img src="https://i.pinimg.com/236x/0a/fe/70/0afe70ab43ab1662eed6125884a8db71.jpg" alt="Car"
+            style="width:100%">
+          <h4>children section</h4>
+        </div>
+      </div>
+
+      <div class="column children">
+        <div class="content">
+          <img src="https://i.pinimg.com/236x/8f/16/20/8f162077fdab0f4f8bc07dbc91f7e50c.jpg" alt="Car"
+            style="width:100%">
+          <h4>childern section</h4>
+        </div>
+      </div>
+
+      <div class="column children">
+        <div class="content">
+          <img src="https://i.pinimg.com/236x/05/36/23/0536236b786bb9b319cd9f919f2e8d4e.jpg" alt="Car"
+            style="width:100%">
+          <h4>childern section</h4>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+
+
+
+</body>
+
+<footer class="footer-main">
+  <div class="footer-section-one">
+    <ul>
+      <li><a class="current" href="home.html">Home</a></li>       
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact us.html">Contact us</a></li>
+    </ul>
+  </div>
+  <div class="follow">
+    Follow us in Social Media
+  </div>
+  <div class="footer-social-icons">
+    <ul>
+      <li><a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/" target="blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.youtube.com/" target="blank"><i class="fa fa-youtube"></i></a></li>
+    </ul>
+  </div>
+  <div class="copy-right">
+    &#9400 2020, BY Sara Mourad
+
+  </div>
+</footer>
+
+</html>

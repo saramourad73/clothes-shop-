@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> home </title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png"
+    href="https://www.express.com/content/dam/express/2020/projects/digital/web/inline-content/03-march/0318-digital-2943-m-luxe-comfort-knit/-dt/m-luxe-comfort-p7-dt.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<style>
+  
+
+ 
+  .view_port {
+    background-color: snow;
+    height: 65px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: auto;
+  }
+
+  .top1 {
+
+    float: left;
+  }
+
+  .topimg {
+    width: 51px;
+
+    background-color: #595959;
+
+  }
+
+  .polling_message {
+    color: azure;
+    float: right;
+    margin-right: 25%;
+    font-size: 60px;
+    text-shadow: 3px 2px;
+  }
+
+
+
+  .cylon_eye {
+    background-color: red;
+    background-image: linear-gradient(to right,
+      rgba(0, 0, 0, .9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%);
+    color: white;
+    height: 100%;
+    width: 80%;
+
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+    animation: 4s linear 0s infinite alternate move_eye;
+
+  }
+  
+  @-webkit-keyframes move_eye {
+    from {
+      margin-left: -20%;
+    }
+
+    to {
+      margin-left: 100%;
+    }
+  }
+
+  @keyframes move_eye {
+    from {
+      margin-left: -20%;
+    }
+
+    to {
+      margin-left: 100%;
+    }
+  }
+
+
+  .photo2 {
+    float: right;
+  }
+
+  .w3-content {
+
+    float: right;
+    width: 58%;
+    margin-left: 20%;
+    border: solid 5px;
+    margin-bottom: 20px;
+    margin-top: 3%;
+  }
+
+  .mySlides {
+    height: 400px;
+    width: 110%;
+    margin-top: 18px;
+  }
+ 
+
+  .navbar {
+            background-color: #555;
+            overflow: auto;
+                }
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            width: 15%;
+            
+                    }
+        .navbar a:hover {
+            background-color: #000000;
+                        }
+
+        .active {
+            background-color:#000000 ;
+                }
+
+   
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+   
+
+  .navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+
+  .navbar a {
+    float: left;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 15%;
+  }
+
+  .navbar a:hover {
+    background-color: #000;
+  }
+
+  .active {
+    background-color: #000000;
+  }}
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+
+  * {
+    box-sizing: border-box
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+  }
+
+.mySlides {
+    display: none;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  .slideshow-container {
+   width: 1330px;
+    position: relative;
+    margin-left: 10px;
+     
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 72%;
+    width: auto;
+    padding: 22px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 44px;
+    transition: 0.6s ease;
+    border-radius: 6 21px 3px 0;
+    user-select: none;
+  }
+
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 22px;
+    padding: 47px 39px;
+    position: absolute;
+    top: 0;
+  }
+
+
+  .dot1 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #000000;
+  }
+
+  .a12 {
+    margin-top: 29%;
+    margin-left: 50%;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+      font-size: 11px
+    }
+  }
+
+  .cont {
+    display: flex;
+    flex-direction: row
+  }
+
+  .container {
+    position: relative;
+    width: 50%;
+
+  }
+
+  .image1 {
+    display: block;
+    width: 95%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+
+  .container:hover .overlay {
+    width: 100%;
+    left: 0;
+  }
+
+  .text1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
+  .pra1 {
+    color: #F5F5F5;
+    background-color: #606060;
+    font-size: 20px;
+    width: 1100px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+ 
+.footer-main{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: lightgray;
+    padding: 20px 0px;
+
+}
+
+.footer-section-one{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.footer-section-one ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-section-one ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.footer-section-one ul li a{
+    font-family: sans-serif;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #32cd32;
+}
+
+.footer-social-icons ul li a{
+    color: black;
+    font-size: 25px;
+    display: block;
+}
+
+.footer-social-icons ul li a i{
+    line-height: 50px;
+}
+
+.follow{
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.copy-right{
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+}
+
+    .dropdown1 {
+  position: relative;
+  display: inline-block;
+        margin: 4%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown1:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 10px;
+  text-align: center;
+}
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 16px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+
+<body>
+
+   
+  <div class="view_port">
+
+
+    <img class="photo2" src="https://l.top4top.io/p_1540slw6g1.png" title="logo" alt="Logo" width="80" height="60" />
+
+    <div class="polling_message">
+      SMA FOR CLOTHES
+    </div>
+
+
+    <div class="cylon_eye"></div>
+
+  </div>
+                <div class="navbar">
+  <a class="active" href="home.html"><center>Home</center></a> 
+  <a href="services.html"><center> Services</center> </a> 
+  <a href="about.html"><center> About</center> </a> 
+  <a href="contact us.html"><center>Contact us</center> </a>
+  <a href="login.html"><center>Login</center></a>
+                 
+</div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2020/SUMMER_1/EDITORIAL/M_SUMMERSTYLEGUIDE_JACKETS_DESKTOP.jpg"
+        style="width:100% ;height:800px;">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img
+        src="https://www.express.com/content/dam/express/2020/projects/digital/web/inline-content/03-march/00-x2-inline-image-update/-m-luxe-comfort-t2943/-dt/m-luxe-comfort-p1-dt-x2.gif"
+        style="width:100%;height:800px; margin-left:">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2020/SUMMER_1/EDITORIAL/M_SUMMERSTYLEGUIDE_COOL_DESKTOP.jpg"
+        style="width:100%; height:800px;">
+      <div class="text"></div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div class="a12">
+    <span class="dot1" onclick="currentSlide(1)"></span>
+    <span class="dot1" onclick="currentSlide(2)"></span>
+    <span class="dot1" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script> <br>
+  <br>
+  <center>
+    <h1 style="color:black"> Women </h1>
+  </center>
+  <div class="cont">
+
+    <div class="container">
+      <img src="https://www1.assets-gap.com/webcontent/0018/123/797/cn18123797.jpg" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Fit & Flare Cami Mini<br> Dress for<br> Women<br>
+          $19.00<br>
+          ($17.00 - $26.00)<br>
+          Best Seller</div>
+      </div>
+    </div><br>
+    <div class="container">
+      <img src="https://www1.assets-gap.com/webcontent/0018/097/141/cn18097141.jpg" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Printed Fit &<br> Flare Cami Midi<br> Dress for Women<br>
+          $24.97<br>
+          ($22.00 - $26.00)<br>
+          Best Seller</div>
+      </div>
+    </div><br>
+    <div class="container">
+      <img src="https://www1.assets-gap.com/webcontent/0018/246/433/cn18246433.jpg" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Fit & Flare Cami Mini<br> Dress for<br> Women<br>
+          $14.00<br>
+          ($11.00 - $27.00)<br>
+          Best Seller</div>
+      </div>
+    </div><br>
+    <div class="container">
+      <img src="https://www1.assets-gap.com/webcontent/0018/527/558/cn18527558.jpg" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Fit & Flare Cami Mini<br> Dress for<br> Women<br>
+          $22.00<br>
+          ($7.00 - $23.00)<br>
+          Best Seller</div>
+      </div>
+    </div><br>
+    <div class="container">
+      <img src="https://www1.assets-gap.com/webcontent/0018/619/291/cn18619291.jpg" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Fit & Flare Cami Mini<br> Dress for<br> Women<br>
+          $25.00<br>
+          ($19.00 - $33.00)<br>
+          Best Seller</div>
+      </div>
+    </div><br>
+  </div> <br>
+  <br>
+  <center>
+    <h1 style="color:black"> Men </h1>
+  </center>
+  <div class="cont">
+
+    <div class="container">
+      <img src="https://www1.assets-gap.com/webcontent/0017/907/204/cn17907204.jpg" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">hermal-Knit<br> Joggers for Men<br>
+          $9.97<br>
+          $29.99<br>
+          25% Off Taken <br>at Checkout<br>
+          (4.7) 59 Reviews<br>
+          Color: Cream</div>
+      </div>
+    </div><br>
+    <div class="container">
+      <img
+        src="https://images.express.com/is/image/expressfashion/0020_00282866_1822_f036?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
+        alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Slim Solid Soft<br> Wash Oxford Shirt<br>
+          $49.90<br>
+          Buy 1, Get 1 $19.90<br>
+
+          5 out of 5 stars<br>
+          76 Reviews<br>
+          Classic Blue 1822<br>
+          $49.90</div>
+      </div>
+    </div><br>
+    <div class="container">
+      <img
+        src="https://images.express.com/is/image/expressfashion/0020_01695102_0001_b019?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
+        alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Slim Tropical Print<br> Rayon Short <br>Sleeve Shirt
+          NEW<br>
+          Online Only<br>
+          $59.90<br>
+          $59.90<br>
+
+          Buy 1, Get 1 $19.90
+          <br>
+          White 1<br>
+          $59.90</div>
+      </div>
+    </div><br>
+    <div class="container">
+      <img src="https://s7.landsend.com/is/image/LandsEnd/426790_SS20_FF_A6J?$980x1470$" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Men's Super-T <br>Short Sleeve T-Shirt <br>
+          $22.95$13.77</div>
+      </div>
+    </div><br>
+    <div class="container">
+      <img src="https://s7.landsend.com/is/image/LandsEnd/436674_FW19_FF_ZTU?$980x1470$" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">FMen's Super <br>Soft Supima <br>Mock Turtleneck
+          $39.<br>
+          Best Seller</div>
+      </div>
+    </div><br>
+  </div> <br>
+  <center>
+    <h1 style="color:black"> Kids </h1>
+  </center>
+  <div class="cont">
+
+    <div class="container">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuMagmDbRQfURYjebAJSikcH8TjxqK4ZTkhyeBjCBq_46mfK2S&usqp=CAU"
+        alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">hermal-Knit<br> Polo Short-Sleeve<br> Dress for kids<br>
+          $18.00
+          $19.99<br>
+        </div>
+      </div>
+    </div><br>
+    <div class="container">
+      <img src="https://www1.assets-gap.com/webcontent/0018/661/277/cn18661277.jpg" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Pique-Knit Uniform <br> Polo Short-Sleeve<br> Dress for Girls<br>
+          $18.00
+          $19.99<br></div>
+      </div>
+    </div><br>
+    <div class="container">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_4uYVb_SNxvH2IbDGk1KZFRG44z1dPin6YJ--xUbOBTpOsY1b&usqp=CAU&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
+        alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Slim Tropical Print<br> for kids<br> Shirt
+          NEW<br>
+          Online Only<br>
+          $9.90<br>
+          $9.90<br>
+
+          Buy 1, Get 1 $11.90
+          <br>
+          White 1<br>
+          $59.90</div>
+      </div>
+    </div><br>
+  </div>
+  
+    <div class="container">
+      <img src="https://www1.assets-gap.com/webcontent/0018/404/454/cn18404454.jpg" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Embroiderd <br> Babydoll Swing<br> Dress for Girls<br>
+          $19.97<br>
+          $29.99<br>
+          25% Off Taken <br>at Checkout</div>
+      </div>
+    </div><br>
+    <div class="container">
+      <img src="https://www1.assets-gap.com/webcontent/0018/333/354/cn18333354.jpg" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div class="text1">Embroidered<br> Ruffle-Tiered Sundress<br> for Girls
+          $19.97<br>
+          $34.99<br>
+          25% Off<br> Taken at Checkout </div>
+
+      </div>
+    </div>
+  </div> <br>
+  <hr>
+  <center> <iframe width="900" height="460" src="https://www.youtube.com/embed/r6YlsmKnrN4" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <hr>
+
+    
+    
+    <center>  <h2> <em> Move the mouse over the image below to show the offer </em> </h2> </center>
+
+<div class="dropdown1">
+  <img src="https://s7.landsend.com/is/image/LandsEnd/500661_FW19_HF_38S?$980x1470$" alt="Cinque Terre" width="150" height="120PX"/>
+  <div class="dropdown-content">
+  <img src="https://s7.landsend.com/is/image/LandsEnd/500661_FW19_HB_38S?$980x1470$" alt="Cinque Terre" width="300" height="200">
+  <div class="desc">Men's Tailored Fit Short <br>$23.97</div>
+  </div>
+</div>
+
+<div class="dropdown1">
+  <img src="https://www.lulus.com/images/product/xlarge/3066980_465172.jpg?w=560" alt="Cinque Terre" width="150" height="120PX"/>
+  <div class="dropdown-content">
+  <img src="https://www.lulus.com/images/product/xlarge/3066990_465172.jpg?w=560" alt="Cinque Terre" width="300" height="200">
+  <div class="desc">Gotta Have It Washed Black<br>19$
+  </div>
+  </div>
+</div>
+<div class="dropdown1">
+  <img src="https://s7.landsend.com/is/image/LandsEnd/506155_FW18_FF_QYO?$980x1470$" alt="Cinque Terre" width="150" height="120px"/>
+  <div class="dropdown-content">
+  <img src="https://s7.landsend.com/is/image/LandsEnd/506155_FW18_FB_QYO?$980x1470$" alt="Cinque Terre" width="300" height="200">
+  <div class="desc">Women's Plus Size Cotton<br>$23.97 </div>
+  </div>
+</div>
+<div class="dropdown1">
+  <img src="https://s7.landsend.com/is/image/LandsEnd/449201_FW19_FF_DCH?$980x1470$" alt="Cinque Terre" width="150" height="120PX">
+  <div class="dropdown-content">
+  <img src="https://s7.landsend.com/is/image/LandsEnd/449201_FW19_FB_DCH?$980x1470$" alt="Cinque Terre" width="300" height="200">
+  <div class="desc">Men's Bedford Rib Heathered <br>$35.97
+ </div>
+  </div>
+</div>
+
+    <div class="dropdown1">
+  <img src="https://www.lulus.com/images/product/xlarge/5504210_1086902.jpg?w=560" alt="Cinque Terre" width="150" height="120PX">
+  <div class="dropdown-content">
+  <img src="https://www.lulus.com/images/product/xlarge/5504230_1086902.jpg?w=500" alt="Cinque Terre" width="300" height="200">
+  <div class="desc">Beside the Seaside Ivory Striped Midi Shirt Dress<br>$35.97
+ </div>
+  </div>
+</div>
+    
+    
+ <hr> <center>
+    <div class="pra1">This site is for selling men's, women's, and children's clothes. There are all sizes and colors.
+      We offer some offers and discounts. There is an import of clothes from all over the country. If you want to get a
+      specific thing, you can enter your name, address, and phone to tell you the latest trends. We also do all the
+      purposes for the holidays and happy months. </div>
+  </center> <br><br>
+  <hr>
+  <br>
+  <center>
+      <h1 style="color:black"> <u> some links to show the clothes</u> </h1>
+  </center>
+    
+    <div class="topnav" id="myTopnav">
+ 
+  
+  <div class="dropdown">
+ <center>   <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+     </button> </center>
+    <div class="dropdown-content">
+      <a href="https://www.landsend.com/">Link 1</a>
+      <a href="https://www.lulus.com/">Link 2</a>
+      <a href="https://www.express.com/">Link 3</a>
+       <a href="https://www.nordstromrack.com/clearance/Kids">Link 4</a>
+    </div>
+        </div> </div>
+ 
+
+</body>
+    
+<footer class="footer-main">
+  <div class="footer-section-one">
+    <ul>
+      <li><a class="current" href="home.html">Home</a></li>       
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact us.html">Contact us</a></li>
+    </ul>
+  </div>
+  <div class="follow">
+    Follow us in Social Media
+  </div>
+  <div class="footer-social-icons">
+    <ul>
+      <li><a href="https://www.facebook.com/" target="blank">  <i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/" target="blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.youtube.com/" target="blank"><i class="fa fa-youtube"></i></a></li>
+    </ul>
+  </div>
+  <div class="copy-right">
+    &#9400 2020, BY Sara Mourad
+
+  </div>
+</footer>
+
+    
+</html>
